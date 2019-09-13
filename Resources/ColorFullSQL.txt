@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScintillaNET>
+    <!-- Set up the language, style, and lexer for ColorFullSql -->
+    <Language Name="ColorFullSql">
+		<Indentation TabWidth="4"/>
+        <Lexer LineCommentPrefix=";" >
+            <Keywords List="0" Inherit="False">
+				MAX MIN AVG SUM MINUS COUNT ISNULL CONVERT CAST CONCAT
+			</Keywords>
+			<Keywords List="1" Inherit="False">
+				CASE WHEN THEN  END IF ELSE
+			</Keywords>				
+			<Keywords List="2" Inherit="False">
+				DISTINCT
+			</Keywords>
+			<Keywords List="3" Inherit="False">
+				WHERE FROM SELECT INSERT DELETE UPDATE INTO VALUES SET
+			</Keywords>
+			<Keywords List="4" Inherit="False">
+				FULL OUTER JOIN OUTER JOIN INNER JOIN LEFT JOIN RIGHT JOIN LEFT OUTER JOIN RIGHT OUTER JOIN ON
+			</Keywords>
+			<Keywords List="5" Inherit="False">
+				LIKE NOT INTERSECT TO BETWEEN EXISTS EXCEPT
+			</Keywords>
+			<Keywords List="6" Inherit="False">
+				FALSE NULL TRUE IS IN
+			</Keywords>
+			<Keywords List="7" Inherit="False">
+				ORDER BY GROUP
+			</Keywords>
+			<Keywords List="8" Inherit="False">
+				AND OR
+			</Keywords>
+				UNION
+			<Keywords List="9" Inherit="False">
+				ALL PRIMARY CALL UNIQUE AS
+			</Keywords>
+		</Lexer>
+		<Styles>
+            <Style Name="Functions" ForeColor="Magenta" Bold="Yes"/>
+            <Style Name="Conditions" ForeColor="SteelBlue" Bold="Yes"/>
+			<Style Name="Distinct" ForeColor="Red" Bold="Yes"/>
+			<Style Name="SQLType" ForeColor="DarkBlue" Bold="Yes"/>
+			<Style Name="Joins" ForeColor="DarkViolet" Bold="Yes"/>
+			<Style Name="Sets" ForeColor="Chocolate" Bold="Yes"/>
+			<Style Name="Grays" ForeColor="Gray" Bold="Yes"/>
+			<Style Name="Group" ForeColor="OrangeRed" Bold="Yes"/>
+			<Style Name="Logic" ForeColor="OrangeRed" Bold="Yes"/>
+			<Style Name="Union" ForeColor="Maroon" Bold="Yes"/>
+			<Style Name="Gold" ForeColor="DarkGoldenRod" Bold="Yes"/>			
+        </Styles>
+	</Language>
+
+</ScintillaNET>
